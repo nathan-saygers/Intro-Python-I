@@ -45,5 +45,5 @@ print_tuple(t)
 
 
 # Declare a tuple of 1 element then print it
-u = ('1')  # What needs to be added to make this work?
+u = (1,)  # What needs to be added to make this work?
 print_tuple(u)
