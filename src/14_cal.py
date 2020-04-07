@@ -33,7 +33,7 @@ from datetime import datetime, date
 datetime_object = date.today()
 
 
-# dateInput = input("14_cal.py [month] [year] ")
+
 
 def monthCal(month=datetime_object.month, year=datetime_object.year):
   try:
@@ -41,8 +41,9 @@ def monthCal(month=datetime_object.month, year=datetime_object.year):
   except:
     print('monthCal expects two arguments, 1. month (ex. 4) 2. year (ex. 2020)')
 
-
-monthCal(2020, 12)
+monthInput = input("choose a month for calendar display (ex. 4): ")
+yearInput = input("choose a year for calendar display (ex. 2020): ")
+monthCal(int(monthInput), int(yearInput))
 
 
 
