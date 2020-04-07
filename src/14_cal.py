@@ -29,4 +29,21 @@ it should use today’s date to get the month and year.
 
 import sys
 import calendar
-from datetime import datetime
+from datetime import datetime, date
+datetime_object = date.today()
+
+
+
+
+def monthCal(month=datetime_object.month, year=datetime_object.year):
+  try:
+    calendar.prmonth(year, month)
+  except:
+    print('monthCal expects two arguments, 1. month (ex. 4) 2. year (ex. 2020)')
+
+monthInput = input("choose a month for calendar display (ex. 4): ")
+yearInput = input("choose a year for calendar display (ex. 2020): ")
+monthCal(int(monthInput), int(yearInput))
+
+
+
